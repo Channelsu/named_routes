@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:namedroutes/route/route.dart' as route;
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
         child: RaisedButton(
           child: Text('設定画面へ'),
           onPressed: () {
-            
+            return Navigator.pushNamed(context, route.settingsScreen);
           },
         ),
       ),

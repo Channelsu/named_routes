@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:namedroutes/route/route.dart' as route;
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -10,9 +11,7 @@ class LoginScreen extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text('ホームへ'),
-          onPressed: () {
-            
-          },
+          onPressed: () => Navigator.pushNamed(context, route.homeScreen),
         ),
       ),
     );
